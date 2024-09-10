@@ -1,0 +1,54 @@
+/* Support Center Page Styles */
+.support-center {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.support-center h1 {
+    font-size: 2.5rem;
+}
+
+.support-center .highlight {
+    color: red;
+}
+
+.support-center .support-team {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.team-member {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+}
+
+.team-member p {
+    color: #1d1b1b;
+}
+
+.social-links a {
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #181717;
+}
+
+.social-links a:hover {
+    color: red;
+}

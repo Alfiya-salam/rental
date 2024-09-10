@@ -1,0 +1,48 @@
+.features-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.features-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.features-title span {
+    color: #0f0f0f;
+}
+
+.features-subtitle {
+    font-size: 1.2em;
+    color: #252525;
+    margin-bottom: 40px;
+}
+
+.features-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-column {
+    flex: 1;
+    max-width: 400px;
+    margin: 10px;
+}
+
+.feature-item {
+    text-align: center;
+    margin: 20px 0;
+}
+.feature-item:not(:last-child) {
+    margin-bottom: 40px;
+
+}
+
+
+.car-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}

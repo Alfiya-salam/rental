@@ -1,0 +1,85 @@
+
+.about-page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0s
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+
+.content {
+    z-index: 2;
+    max-width: 600px;
+}
+
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+.rental-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.rental-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.rental-form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.rental-form select,
+.rental-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.submit-button {
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.submit-button:hover {
+    background-color: #e63636;
+}
