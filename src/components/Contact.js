@@ -42,10 +42,10 @@ const Contact = () => {
             <p>123 Street, kochi, Ernakulam</p>
             <p>Email: info@eywheel.com</p>
             <p>Phone: +91 925674345</p>
-            <div className="social-icons">
-              <a href="#"><i className="fa fa-facebook"></i></a>
-              <a href="#"><i className="fa fa-twitter"></i></a>
-              <a href="#"><i className="fa fa-linkedin"></i></a>
+           <div className="social-links">
+              <a href="#"><img src="images/face.png"  alt="facebook"></img></a>
+              <a href="#"><img src="images/insta.png"  alt="facebook"></img></a>
+              <a href="#"><img src="images/link.png"  alt="facebook"></img></a>
             </div>
           </div>
         </div>

@@ -1,76 +1,95 @@
-/* Main section styling */
+
 .reviews-section {
     text-align: center;
-    padding: 50px;
+    padding: 40px;
     background-color: #f9f9f9;
 }
 
 .reviews-section h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 20px;
 }
 
 .reviews-section .highlight {
     color: #ff4747;
-    
 }
 
 .review-intro {
     max-width: 600px;
-    margin: 0 auto 50px;
+    margin: 0 auto 30px;
     color: #666;
 }
 
 
-.reviews-container {
+.slider {
+    position: relative;
     display: flex;
     justify-content: center;
-
-    gap: 10px;
-
-    flex-wrap: wrap;
+    align-items: center;
 }
 
+.slider-button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    color: #333;
+}
+
+.slider-button.prev {
+    position: absolute;
+    left: 10px;
+}
+
+.slider-button.next {
+    position: absolute;
+    right: 10px;
+}
+
+.reviews-container {
+    width: 800px;
+    
+    overflow: hidden;
+    display: flex;
+    
+}
 
 .review-card {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 25px;
-    
-    width: 350px;
-    
-    height: 200px;
     text-align: left;
     transition: transform 0.3s ease;
-    margin: 5px;
-    
+    margin: 10px;
+    width: 360px;
+
+    height: auto;
+    display: none;
+
 }
 
-
+.review-card.active {
+    display: block;
+}
 
 .review-header {
     display: flex;
     gap: 10px;
-
     align-items: center;
 }
 
-
 .review-header img {
-    width: 40px;
-
-    height: 40px;
-    
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-
 .reviewer-info h3 {
     margin: 0;
-    font-size: 1.1rem;
-    
+    font-size: 1.2rem;
     color: #333;
 }
 
@@ -79,30 +98,30 @@
     color: #777;
 }
 
-
 .stars {
-    font-size: 1rem;
-
+    font-size: 1.2rem;
     color: #ff4747;
-    
 }
-
 
 .review-text {
-    margin-top: 10px;
-    
+    margin-top: 12px;
     color: #666;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 765px) {
     .reviews-container {
+        width: 100%;
         flex-direction: column;
-        align-items: center;
     }
 
     .review-card {
-        width: 100%;
-        max-width: 400px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .slider-button {
+        font-size: 1.5rem;
     }
 }

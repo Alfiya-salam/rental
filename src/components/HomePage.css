@@ -1,0 +1,176 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 15px 50px;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(92, 4, 4);
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.get-started-btn {
+    background-color: #f43b47;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    padding: 50px;
+    transition: background-image 1s ease-in-out;
+}
+
+
+.reservation-form {
+    background-color: rgba(0, 0, 128, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.reservation-form h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.reservation-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    color: #fff;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.reservation-form button {
+    background-color: #f43b47;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.reservation-form button:hover {
+    background-color: #d9353d;
+}
+
+.offer-text {
+    max-width: 400px;
+    text-align: right;
+}
+
+.offer-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.offer-text p {
+    font-size: 18px;
+}
+
+
+@media (max-width: 765px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .get-started-btn {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .banner {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .reservation-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .offer-text {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .offer-text h1 {
+        font-size: 28px;
+    }
+
+    .offer-text p {
+        font-size: 16px;
+    }
+}

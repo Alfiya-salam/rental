@@ -1,54 +1,69 @@
-/* Support Center Page Styles */
 .support-center {
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 2rem;
 }
 
 .support-center h1 {
     font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.support-center .highlight {
+.support-center h1 span {
     color: red;
+    
 }
 
-.support-center .support-team {
+.support-center p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.team {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 3rem;
+    flex-wrap: wrap;
 }
 
 .team-member {
-    background-color: #f9f9f9;
-    padding: 1.5rem;
+    background-color: #fff;
+    padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
     text-align: center;
 }
 
 .team-member img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
     border-radius: 50%;
-    margin-bottom: 1rem;
 }
 
-.team-member h3 {
+.team-member h2 {
     font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .team-member p {
-    color: #1d1b1b;
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
 }
 
-.social-links a {
-    margin: 0 5px;
-    text-decoration: none;
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons i {
     font-size: 1.2rem;
-    color: #181717;
+    color: #555;
+    transition: color 0.3s;
 }
 
-.social-links a:hover {
-    color: red;
+.social-icons i:hover {
+    color: #000;
 }

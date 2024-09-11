@@ -1,0 +1,28 @@
+
+.custom-prev-arrow,
+.custom-next-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(177, 170, 170, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 24px;
+}
+
+.custom-prev-arrow {
+    left: 10px;
+}
+
+.custom-next-arrow {
+    right: 10px;
+}
+
+.custom-prev-arrow i,
+.custom-next-arrow i {
+    color: white;
+    
+}

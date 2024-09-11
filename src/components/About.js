@@ -1,56 +1,99 @@
-import React, { useState, useEffect } from 'react';
-import './About.css';
-
-const images = [
-  'images/carrr.png',  // Replace with actual image URL
-  'images/caa.png',  // Replace with actual image URL
-];
+import React from "react";
+import "./About.css";
 
 const About = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 3000); 
-    return () => clearInterval(intervalId);
-  }, []);
-
   return (
-    <div
-      className="about-page"
-      style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
-    >
-      <div className="overlay">
-        <div className="content">
-          <h1>Get 15% off your Rentals!</h1>
-          <p>Choose your model from our wide selection of cars.</p>
-          <form className="rental-form">
-            <div className="form-group">
-              <label htmlFor="carModel">Choose a Model:</label>
-              <select id="carModel" name="carModel">
-                <option value="sedan">Sedan</option>
-                <option value="suv">SUV</option>
-                <option value="sports">Sports Car</option>
-                <option value="electric">Electric</option>
-              </select>
+    <div className="about-page">
+      <header className="about-banner">
+        <h1>About Us</h1>
+        <p>
+          Home / Pages / <span>About</span>
+        </p>
+      </header>
+
+      <section className="about-content">
+        <div className="about-text">
+          <h2>
+            Central <span>About</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut amet nemo
+            expedita asperiores commodi accusantium at cum harum, excepturi, quia
+            tempora cupiditate! Adipisci facilis modi quisquam quia distinctio.
+          </p>
+
+          <div className="about-cards">
+            <div className="card">
+              <div className="icon">🎯</div>
+              <h3>Our Vision</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
             </div>
-            <div className="form-group">
-              <label htmlFor="pickupDate">Pickup Date:</label>
-              <input type="date" id="pickupDate" name="pickupDate" />
+            <div className="card">
+              <div className="icon">🚗</div>
+              <h3>Our Mission</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
             </div>
-            <div className="form-group">
-              <label htmlFor="dropoffDate">Dropoff Date:</label>
-              <input type="date" id="dropoffDate" name="dropoffDate" />
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+            aliquam ipsum. Sed suscipit dolorem libero sequi quos natus debitis
+            reprehenderit facilis quaerat similique.
+          </p>
+
+          {/* Experience Section */}
+          <div className="experience-points-container">
+            <div className="experience-box">
+              <h2>17</h2>
+              <p>Years of Experience</p>
             </div>
-            <button type="submit" className="submit-button">
-              Book Now
-            </button>
-          </form>
+
+            <div className="points">
+              <ul>
+                <li>Simple</li>
+                <li>Heavy</li>
+                <li>Look</li>
+                <li>Simplicity</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="about-footer">
+            <div className="founder">
+              <img
+                src="https://themewagon.github.io/Cental/img/attachment-img.jpg"
+                alt="man"
+                className="man-img"
+              />
+            </div>
+            <div className="founder-content">
+              <h3>William Burgess</h3>
+              <p>Carveo Founder</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                iste, facilis quisquam eum molestias rerum repellat.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
+
+        <div className="about-image">
+          <img
+            src="https://themewagon.github.io/Cental/img/about-img.jpg"
+            alt="Car Key"
+            className="about-image-key"
+          />
+          <img
+            src="https://themewagon.github.io/Cental/img/about-img-1.jpg"
+            alt="Vintage Car"
+            className="about-image-car"
+          />
+        </div>
+      </section>
     </div>
   );
 };

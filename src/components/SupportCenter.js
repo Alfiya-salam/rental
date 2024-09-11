@@ -1,45 +1,49 @@
-import React from "react";
-import "./supportCenter.css"; 
+import React from 'react';
+import './SupportCenter.css'; 
 
 const SupportCenter = () => {
+  
+  const team = [
+    {
+      name: 'Martin Doe',
+      profession: 'Support Specialist',
+      image: 'images/team1.png', 
+    },
+    {
+      name: 'Martin Doe',
+      profession: 'Support Specialist',
+      image: 'images/team2.png',
+    },
+    {
+      name: 'Martin Doe',
+      profession: 'Support Specialist',
+      image: 'images/team3.png',
+    },
+    {
+      name: 'Martin Doe',
+      profession: 'Support Specialist',
+      image: 'images/team4.png',
+    },
+  ];
+
   return (
     <div className="support-center">
-      <h1>Customer <span className="highlight">Support</span> Center</h1>
-      <p>Dedicated to providing you with exceptional support and solutions, anytime you need."
-          Let me know if you'd like a different variation!</p>
-      <div className="support-team">
-        
-        <div className="team-member">
-          <img src="images/client2.png" alt="Martin Doe" />
-          <h3>Martin Doe</h3>
-          <p>Profession</p>
-          <div className="social-links">
-            <a href="#"><i className="fa fa-facebook"></i></a>
-            <a href="#"><i className="fa fa-twitter"></i></a>
-            <a href="#"><i className="fa fa-linkedin"></i></a>
+      <h1>Customer <span>Support</span> Center</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut amet nemo expedita asperiores commodi accusantium.</p>
+      <div className="team">
+        {team.map((member, index) => (
+          <div key={index} className="team-member">
+            <img src={member.image} alt={member.name} />
+            <h2>{member.name}</h2>
+            <p>{member.profession}</p>
+            <div className="social-icons">
+              <i className="fab fa-facebook-f"></i>
+              <i className="fab fa-twitter"></i>
+              <i className="fab fa-instagram"></i>
+              <i className="fab fa-linkedin-in"></i>
+            </div>
           </div>
-        </div>
-      
-        <div className="team-member">
-          <img src="images/cline.png" alt="Catherine" />
-          <h3>Catherine</h3>
-          <p>Profession</p>
-          <div className="social-links">
-            <a href="#"><i className="fa fa-facebook"></i></a>
-            <a href="#"><i className="fa fa-twitter"></i></a>
-            <a href="#"><i className="fa fa-linkedin"></i></a>
-          </div>
-        </div>
-        <div className="team-member">
-          <img src="images/cli.png" alt="Karoline" />
-          <h3>Karoline</h3>
-          <p>Profession</p>
-          <div className="social-links">
-            <a href="#"><i className="fa fa-facebook"></i></a>
-            <a href="#"><i className="fa fa-twitter"></i></a>
-            <a href="#"><i className="fa fa-linkedin"></i></a>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
